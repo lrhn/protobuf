@@ -35,7 +35,7 @@ class FieldNames {
   /// Identifier for generated getters/setters.
   final String fieldName;
 
-  /// Identifier for the generated hasX() method, without braces.
+  /// Identifier for the generated hasX getter.
   ///
   /// `null` for repeated fields.
   final String? hasMethodName;

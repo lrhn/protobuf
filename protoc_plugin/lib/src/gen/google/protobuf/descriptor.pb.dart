@@ -17,7 +17,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'descriptor.pbenum.dart';
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 export 'descriptor.pbenum.dart';
 
@@ -180,7 +181,7 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -189,7 +190,7 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set package($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasPackage() => $_has(1);
+  $core.bool get hasPackage => $_has(1);
   @$pb.TagNumber(2)
   void clearPackage() => $_clearField(2);
 
@@ -215,7 +216,7 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   set options(FileOptions value) => $_setField(8, value);
   @$pb.TagNumber(8)
-  $core.bool hasOptions() => $_has(7);
+  $core.bool get hasOptions => $_has(7);
   @$pb.TagNumber(8)
   void clearOptions() => $_clearField(8);
   @$pb.TagNumber(8)
@@ -230,7 +231,7 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   set sourceCodeInfo(SourceCodeInfo value) => $_setField(9, value);
   @$pb.TagNumber(9)
-  $core.bool hasSourceCodeInfo() => $_has(8);
+  $core.bool get hasSourceCodeInfo => $_has(8);
   @$pb.TagNumber(9)
   void clearSourceCodeInfo() => $_clearField(9);
   @$pb.TagNumber(9)
@@ -257,7 +258,7 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   set syntax($core.String value) => $_setString(11, value);
   @$pb.TagNumber(12)
-  $core.bool hasSyntax() => $_has(11);
+  $core.bool get hasSyntax => $_has(11);
   @$pb.TagNumber(12)
   void clearSyntax() => $_clearField(12);
 
@@ -270,7 +271,7 @@ class FileDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   set edition(Edition value) => $_setField(14, value);
   @$pb.TagNumber(14)
-  $core.bool hasEdition() => $_has(12);
+  $core.bool get hasEdition => $_has(12);
   @$pb.TagNumber(14)
   void clearEdition() => $_clearField(14);
 
@@ -345,7 +346,7 @@ class DescriptorProto_ExtensionRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set start($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasStart() => $_has(0);
+  $core.bool get hasStart => $_has(0);
   @$pb.TagNumber(1)
   void clearStart() => $_clearField(1);
 
@@ -354,7 +355,7 @@ class DescriptorProto_ExtensionRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set end($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasEnd() => $_has(1);
+  $core.bool get hasEnd => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => $_clearField(2);
 
@@ -363,7 +364,7 @@ class DescriptorProto_ExtensionRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set options(ExtensionRangeOptions value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasOptions() => $_has(2);
+  $core.bool get hasOptions => $_has(2);
   @$pb.TagNumber(3)
   void clearOptions() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -435,7 +436,7 @@ class DescriptorProto_ReservedRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set start($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasStart() => $_has(0);
+  $core.bool get hasStart => $_has(0);
   @$pb.TagNumber(1)
   void clearStart() => $_clearField(1);
 
@@ -444,7 +445,7 @@ class DescriptorProto_ReservedRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set end($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasEnd() => $_has(1);
+  $core.bool get hasEnd => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => $_clearField(2);
 }
@@ -543,7 +544,7 @@ class DescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -567,7 +568,7 @@ class DescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set options(MessageOptions value) => $_setField(7, value);
   @$pb.TagNumber(7)
-  $core.bool hasOptions() => $_has(6);
+  $core.bool get hasOptions => $_has(6);
   @$pb.TagNumber(7)
   void clearOptions() => $_clearField(7);
   @$pb.TagNumber(7)
@@ -590,7 +591,7 @@ class DescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   set visibility(SymbolVisibility value) => $_setField(11, value);
   @$pb.TagNumber(11)
-  $core.bool hasVisibility() => $_has(10);
+  $core.bool get hasVisibility => $_has(10);
   @$pb.TagNumber(11)
   void clearVisibility() => $_clearField(11);
 }
@@ -668,7 +669,7 @@ class ExtensionRangeOptions_Declaration extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set number($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasNumber() => $_has(0);
+  $core.bool get hasNumber => $_has(0);
   @$pb.TagNumber(1)
   void clearNumber() => $_clearField(1);
 
@@ -679,7 +680,7 @@ class ExtensionRangeOptions_Declaration extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set fullName($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasFullName() => $_has(1);
+  $core.bool get hasFullName => $_has(1);
   @$pb.TagNumber(2)
   void clearFullName() => $_clearField(2);
 
@@ -691,7 +692,7 @@ class ExtensionRangeOptions_Declaration extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set type($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasType() => $_has(2);
+  $core.bool get hasType => $_has(2);
   @$pb.TagNumber(3)
   void clearType() => $_clearField(3);
 
@@ -703,7 +704,7 @@ class ExtensionRangeOptions_Declaration extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set reserved($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(5)
-  $core.bool hasReserved() => $_has(3);
+  $core.bool get hasReserved => $_has(3);
   @$pb.TagNumber(5)
   void clearReserved() => $_clearField(5);
 
@@ -714,7 +715,7 @@ class ExtensionRangeOptions_Declaration extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set repeated($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(6)
-  $core.bool hasRepeated() => $_has(4);
+  $core.bool get hasRepeated => $_has(4);
   @$pb.TagNumber(6)
   void clearRepeated() => $_clearField(6);
 }
@@ -802,7 +803,7 @@ class ExtensionRangeOptions extends $pb.GeneratedMessage {
   set verification(ExtensionRangeOptions_VerificationState value) =>
       $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasVerification() => $_has(1);
+  $core.bool get hasVerification => $_has(1);
   @$pb.TagNumber(3)
   void clearVerification() => $_clearField(3);
 
@@ -812,7 +813,7 @@ class ExtensionRangeOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(50)
   set features(FeatureSet value) => $_setField(50, value);
   @$pb.TagNumber(50)
-  $core.bool hasFeatures() => $_has(2);
+  $core.bool get hasFeatures => $_has(2);
   @$pb.TagNumber(50)
   void clearFeatures() => $_clearField(50);
   @$pb.TagNumber(50)
@@ -910,7 +911,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -921,7 +922,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set extendee($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasExtendee() => $_has(1);
+  $core.bool get hasExtendee => $_has(1);
   @$pb.TagNumber(2)
   void clearExtendee() => $_clearField(2);
 
@@ -930,7 +931,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set number($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasNumber() => $_has(2);
+  $core.bool get hasNumber => $_has(2);
   @$pb.TagNumber(3)
   void clearNumber() => $_clearField(3);
 
@@ -939,7 +940,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set label(FieldDescriptorProto_Label value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasLabel() => $_has(3);
+  $core.bool get hasLabel => $_has(3);
   @$pb.TagNumber(4)
   void clearLabel() => $_clearField(4);
 
@@ -950,7 +951,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set type(FieldDescriptorProto_Type value) => $_setField(5, value);
   @$pb.TagNumber(5)
-  $core.bool hasType() => $_has(4);
+  $core.bool get hasType => $_has(4);
   @$pb.TagNumber(5)
   void clearType() => $_clearField(5);
 
@@ -964,7 +965,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set typeName($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
-  $core.bool hasTypeName() => $_has(5);
+  $core.bool get hasTypeName => $_has(5);
   @$pb.TagNumber(6)
   void clearTypeName() => $_clearField(6);
 
@@ -977,7 +978,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set defaultValue($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
-  $core.bool hasDefaultValue() => $_has(6);
+  $core.bool get hasDefaultValue => $_has(6);
   @$pb.TagNumber(7)
   void clearDefaultValue() => $_clearField(7);
 
@@ -986,7 +987,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   set options(FieldOptions value) => $_setField(8, value);
   @$pb.TagNumber(8)
-  $core.bool hasOptions() => $_has(7);
+  $core.bool get hasOptions => $_has(7);
   @$pb.TagNumber(8)
   void clearOptions() => $_clearField(8);
   @$pb.TagNumber(8)
@@ -999,7 +1000,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   set oneofIndex($core.int value) => $_setSignedInt32(8, value);
   @$pb.TagNumber(9)
-  $core.bool hasOneofIndex() => $_has(8);
+  $core.bool get hasOneofIndex => $_has(8);
   @$pb.TagNumber(9)
   void clearOneofIndex() => $_clearField(9);
 
@@ -1012,7 +1013,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   set jsonName($core.String value) => $_setString(9, value);
   @$pb.TagNumber(10)
-  $core.bool hasJsonName() => $_has(9);
+  $core.bool get hasJsonName => $_has(9);
   @$pb.TagNumber(10)
   void clearJsonName() => $_clearField(10);
 
@@ -1042,7 +1043,7 @@ class FieldDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   set proto3Optional($core.bool value) => $_setBool(10, value);
   @$pb.TagNumber(17)
-  $core.bool hasProto3Optional() => $_has(10);
+  $core.bool get hasProto3Optional => $_has(10);
   @$pb.TagNumber(17)
   void clearProto3Optional() => $_clearField(17);
 }
@@ -1105,7 +1106,7 @@ class OneofDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -1114,7 +1115,7 @@ class OneofDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set options(OneofOptions value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasOptions() => $_has(1);
+  $core.bool get hasOptions => $_has(1);
   @$pb.TagNumber(2)
   void clearOptions() => $_clearField(2);
   @$pb.TagNumber(2)
@@ -1192,7 +1193,7 @@ class EnumDescriptorProto_EnumReservedRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set start($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasStart() => $_has(0);
+  $core.bool get hasStart => $_has(0);
   @$pb.TagNumber(1)
   void clearStart() => $_clearField(1);
 
@@ -1201,7 +1202,7 @@ class EnumDescriptorProto_EnumReservedRange extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set end($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasEnd() => $_has(1);
+  $core.bool get hasEnd => $_has(1);
   @$pb.TagNumber(2)
   void clearEnd() => $_clearField(2);
 }
@@ -1280,7 +1281,7 @@ class EnumDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -1292,7 +1293,7 @@ class EnumDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set options(EnumOptions value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasOptions() => $_has(2);
+  $core.bool get hasOptions => $_has(2);
   @$pb.TagNumber(3)
   void clearOptions() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -1316,7 +1317,7 @@ class EnumDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set visibility(SymbolVisibility value) => $_setField(6, value);
   @$pb.TagNumber(6)
-  $core.bool hasVisibility() => $_has(5);
+  $core.bool get hasVisibility => $_has(5);
   @$pb.TagNumber(6)
   void clearVisibility() => $_clearField(6);
 }
@@ -1384,7 +1385,7 @@ class EnumValueDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -1393,7 +1394,7 @@ class EnumValueDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set number($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasNumber() => $_has(1);
+  $core.bool get hasNumber => $_has(1);
   @$pb.TagNumber(2)
   void clearNumber() => $_clearField(2);
 
@@ -1402,7 +1403,7 @@ class EnumValueDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set options(EnumValueOptions value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasOptions() => $_has(2);
+  $core.bool get hasOptions => $_has(2);
   @$pb.TagNumber(3)
   void clearOptions() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -1472,7 +1473,7 @@ class ServiceDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -1484,7 +1485,7 @@ class ServiceDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set options(ServiceOptions value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasOptions() => $_has(2);
+  $core.bool get hasOptions => $_has(2);
   @$pb.TagNumber(3)
   void clearOptions() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -1562,7 +1563,7 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -1573,7 +1574,7 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set inputType($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasInputType() => $_has(1);
+  $core.bool get hasInputType => $_has(1);
   @$pb.TagNumber(2)
   void clearInputType() => $_clearField(2);
 
@@ -1582,7 +1583,7 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set outputType($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasOutputType() => $_has(2);
+  $core.bool get hasOutputType => $_has(2);
   @$pb.TagNumber(3)
   void clearOutputType() => $_clearField(3);
 
@@ -1591,7 +1592,7 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set options(MethodOptions value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasOptions() => $_has(3);
+  $core.bool get hasOptions => $_has(3);
   @$pb.TagNumber(4)
   void clearOptions() => $_clearField(4);
   @$pb.TagNumber(4)
@@ -1603,7 +1604,7 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set clientStreaming($core.bool value) => $_setBool(4, value);
   @$pb.TagNumber(5)
-  $core.bool hasClientStreaming() => $_has(4);
+  $core.bool get hasClientStreaming => $_has(4);
   @$pb.TagNumber(5)
   void clearClientStreaming() => $_clearField(5);
 
@@ -1613,7 +1614,7 @@ class MethodDescriptorProto extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set serverStreaming($core.bool value) => $_setBool(5, value);
   @$pb.TagNumber(6)
-  $core.bool hasServerStreaming() => $_has(5);
+  $core.bool get hasServerStreaming => $_has(5);
   @$pb.TagNumber(6)
   void clearServerStreaming() => $_clearField(6);
 }
@@ -1749,7 +1750,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set javaPackage($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasJavaPackage() => $_has(0);
+  $core.bool get hasJavaPackage => $_has(0);
   @$pb.TagNumber(1)
   void clearJavaPackage() => $_clearField(1);
 
@@ -1763,7 +1764,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   set javaOuterClassname($core.String value) => $_setString(1, value);
   @$pb.TagNumber(8)
-  $core.bool hasJavaOuterClassname() => $_has(1);
+  $core.bool get hasJavaOuterClassname => $_has(1);
   @$pb.TagNumber(8)
   void clearJavaOuterClassname() => $_clearField(8);
 
@@ -1772,7 +1773,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   set optimizeFor(FileOptions_OptimizeMode value) => $_setField(9, value);
   @$pb.TagNumber(9)
-  $core.bool hasOptimizeFor() => $_has(2);
+  $core.bool get hasOptimizeFor => $_has(2);
   @$pb.TagNumber(9)
   void clearOptimizeFor() => $_clearField(9);
 
@@ -1787,7 +1788,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   set javaMultipleFiles($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(10)
-  $core.bool hasJavaMultipleFiles() => $_has(3);
+  $core.bool get hasJavaMultipleFiles => $_has(3);
   @$pb.TagNumber(10)
   void clearJavaMultipleFiles() => $_clearField(10);
 
@@ -1801,7 +1802,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   set goPackage($core.String value) => $_setString(4, value);
   @$pb.TagNumber(11)
-  $core.bool hasGoPackage() => $_has(4);
+  $core.bool get hasGoPackage => $_has(4);
   @$pb.TagNumber(11)
   void clearGoPackage() => $_clearField(11);
 
@@ -1820,7 +1821,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   set ccGenericServices($core.bool value) => $_setBool(5, value);
   @$pb.TagNumber(16)
-  $core.bool hasCcGenericServices() => $_has(5);
+  $core.bool get hasCcGenericServices => $_has(5);
   @$pb.TagNumber(16)
   void clearCcGenericServices() => $_clearField(16);
 
@@ -1829,7 +1830,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   set javaGenericServices($core.bool value) => $_setBool(6, value);
   @$pb.TagNumber(17)
-  $core.bool hasJavaGenericServices() => $_has(6);
+  $core.bool get hasJavaGenericServices => $_has(6);
   @$pb.TagNumber(17)
   void clearJavaGenericServices() => $_clearField(17);
 
@@ -1838,7 +1839,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   set pyGenericServices($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(18)
-  $core.bool hasPyGenericServices() => $_has(7);
+  $core.bool get hasPyGenericServices => $_has(7);
   @$pb.TagNumber(18)
   void clearPyGenericServices() => $_clearField(18);
 
@@ -1851,7 +1852,7 @@ class FileOptions extends $pb.GeneratedMessage {
   set javaGenerateEqualsAndHash($core.bool value) => $_setBool(8, value);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(20)
-  $core.bool hasJavaGenerateEqualsAndHash() => $_has(8);
+  $core.bool get hasJavaGenerateEqualsAndHash => $_has(8);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(20)
   void clearJavaGenerateEqualsAndHash() => $_clearField(20);
@@ -1865,7 +1866,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   set deprecated($core.bool value) => $_setBool(9, value);
   @$pb.TagNumber(23)
-  $core.bool hasDeprecated() => $_has(9);
+  $core.bool get hasDeprecated => $_has(9);
   @$pb.TagNumber(23)
   void clearDeprecated() => $_clearField(23);
 
@@ -1884,7 +1885,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   set javaStringCheckUtf8($core.bool value) => $_setBool(10, value);
   @$pb.TagNumber(27)
-  $core.bool hasJavaStringCheckUtf8() => $_has(10);
+  $core.bool get hasJavaStringCheckUtf8 => $_has(10);
   @$pb.TagNumber(27)
   void clearJavaStringCheckUtf8() => $_clearField(27);
 
@@ -1895,7 +1896,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(31)
   set ccEnableArenas($core.bool value) => $_setBool(11, value);
   @$pb.TagNumber(31)
-  $core.bool hasCcEnableArenas() => $_has(11);
+  $core.bool get hasCcEnableArenas => $_has(11);
   @$pb.TagNumber(31)
   void clearCcEnableArenas() => $_clearField(31);
 
@@ -1906,7 +1907,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(36)
   set objcClassPrefix($core.String value) => $_setString(12, value);
   @$pb.TagNumber(36)
-  $core.bool hasObjcClassPrefix() => $_has(12);
+  $core.bool get hasObjcClassPrefix => $_has(12);
   @$pb.TagNumber(36)
   void clearObjcClassPrefix() => $_clearField(36);
 
@@ -1916,7 +1917,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(37)
   set csharpNamespace($core.String value) => $_setString(13, value);
   @$pb.TagNumber(37)
-  $core.bool hasCsharpNamespace() => $_has(13);
+  $core.bool get hasCsharpNamespace => $_has(13);
   @$pb.TagNumber(37)
   void clearCsharpNamespace() => $_clearField(37);
 
@@ -1929,7 +1930,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(39)
   set swiftPrefix($core.String value) => $_setString(14, value);
   @$pb.TagNumber(39)
-  $core.bool hasSwiftPrefix() => $_has(14);
+  $core.bool get hasSwiftPrefix => $_has(14);
   @$pb.TagNumber(39)
   void clearSwiftPrefix() => $_clearField(39);
 
@@ -1940,7 +1941,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(40)
   set phpClassPrefix($core.String value) => $_setString(15, value);
   @$pb.TagNumber(40)
-  $core.bool hasPhpClassPrefix() => $_has(15);
+  $core.bool get hasPhpClassPrefix => $_has(15);
   @$pb.TagNumber(40)
   void clearPhpClassPrefix() => $_clearField(40);
 
@@ -1952,7 +1953,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(41)
   set phpNamespace($core.String value) => $_setString(16, value);
   @$pb.TagNumber(41)
-  $core.bool hasPhpNamespace() => $_has(16);
+  $core.bool get hasPhpNamespace => $_has(16);
   @$pb.TagNumber(41)
   void clearPhpNamespace() => $_clearField(41);
 
@@ -1964,7 +1965,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(44)
   set phpMetadataNamespace($core.String value) => $_setString(17, value);
   @$pb.TagNumber(44)
-  $core.bool hasPhpMetadataNamespace() => $_has(17);
+  $core.bool get hasPhpMetadataNamespace => $_has(17);
   @$pb.TagNumber(44)
   void clearPhpMetadataNamespace() => $_clearField(44);
 
@@ -1976,7 +1977,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(45)
   set rubyPackage($core.String value) => $_setString(18, value);
   @$pb.TagNumber(45)
-  $core.bool hasRubyPackage() => $_has(18);
+  $core.bool get hasRubyPackage => $_has(18);
   @$pb.TagNumber(45)
   void clearRubyPackage() => $_clearField(45);
 
@@ -1989,7 +1990,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(50)
   set features(FeatureSet value) => $_setField(50, value);
   @$pb.TagNumber(50)
-  $core.bool hasFeatures() => $_has(19);
+  $core.bool get hasFeatures => $_has(19);
   @$pb.TagNumber(50)
   void clearFeatures() => $_clearField(50);
   @$pb.TagNumber(50)
@@ -2099,7 +2100,7 @@ class MessageOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set messageSetWireFormat($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasMessageSetWireFormat() => $_has(0);
+  $core.bool get hasMessageSetWireFormat => $_has(0);
   @$pb.TagNumber(1)
   void clearMessageSetWireFormat() => $_clearField(1);
 
@@ -2111,7 +2112,7 @@ class MessageOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set noStandardDescriptorAccessor($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasNoStandardDescriptorAccessor() => $_has(1);
+  $core.bool get hasNoStandardDescriptorAccessor => $_has(1);
   @$pb.TagNumber(2)
   void clearNoStandardDescriptorAccessor() => $_clearField(2);
 
@@ -2124,7 +2125,7 @@ class MessageOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set deprecated($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasDeprecated() => $_has(2);
+  $core.bool get hasDeprecated => $_has(2);
   @$pb.TagNumber(3)
   void clearDeprecated() => $_clearField(3);
 
@@ -2154,7 +2155,7 @@ class MessageOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set mapEntry($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(7)
-  $core.bool hasMapEntry() => $_has(3);
+  $core.bool get hasMapEntry => $_has(3);
   @$pb.TagNumber(7)
   void clearMapEntry() => $_clearField(7);
 
@@ -2177,7 +2178,7 @@ class MessageOptions extends $pb.GeneratedMessage {
       $_setBool(4, value);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(11)
-  $core.bool hasDeprecatedLegacyJsonFieldConflicts() => $_has(4);
+  $core.bool get hasDeprecatedLegacyJsonFieldConflicts => $_has(4);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(11)
   void clearDeprecatedLegacyJsonFieldConflicts() => $_clearField(11);
@@ -2191,7 +2192,7 @@ class MessageOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   set features(FeatureSet value) => $_setField(12, value);
   @$pb.TagNumber(12)
-  $core.bool hasFeatures() => $_has(5);
+  $core.bool get hasFeatures => $_has(5);
   @$pb.TagNumber(12)
   void clearFeatures() => $_clearField(12);
   @$pb.TagNumber(12)
@@ -2265,7 +2266,7 @@ class FieldOptions_EditionDefault extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set value($core.String value) => $_setString(0, value);
   @$pb.TagNumber(2)
-  $core.bool hasValue() => $_has(0);
+  $core.bool get hasValue => $_has(0);
   @$pb.TagNumber(2)
   void clearValue() => $_clearField(2);
 
@@ -2274,7 +2275,7 @@ class FieldOptions_EditionDefault extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set edition(Edition value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasEdition() => $_has(1);
+  $core.bool get hasEdition => $_has(1);
   @$pb.TagNumber(3)
   void clearEdition() => $_clearField(3);
 }
@@ -2355,7 +2356,7 @@ class FieldOptions_FeatureSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set editionIntroduced(Edition value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasEditionIntroduced() => $_has(0);
+  $core.bool get hasEditionIntroduced => $_has(0);
   @$pb.TagNumber(1)
   void clearEditionIntroduced() => $_clearField(1);
 
@@ -2366,7 +2367,7 @@ class FieldOptions_FeatureSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set editionDeprecated(Edition value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasEditionDeprecated() => $_has(1);
+  $core.bool get hasEditionDeprecated => $_has(1);
   @$pb.TagNumber(2)
   void clearEditionDeprecated() => $_clearField(2);
 
@@ -2377,7 +2378,7 @@ class FieldOptions_FeatureSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set deprecationWarning($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasDeprecationWarning() => $_has(2);
+  $core.bool get hasDeprecationWarning => $_has(2);
   @$pb.TagNumber(3)
   void clearDeprecationWarning() => $_clearField(3);
 
@@ -2389,7 +2390,7 @@ class FieldOptions_FeatureSupport extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set editionRemoved(Edition value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasEditionRemoved() => $_has(3);
+  $core.bool get hasEditionRemoved => $_has(3);
   @$pb.TagNumber(4)
   void clearEditionRemoved() => $_clearField(4);
 }
@@ -2507,7 +2508,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set ctype(FieldOptions_CType value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCtype() => $_has(0);
+  $core.bool get hasCtype => $_has(0);
   @$pb.TagNumber(1)
   void clearCtype() => $_clearField(1);
 
@@ -2523,7 +2524,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set packed($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasPacked() => $_has(1);
+  $core.bool get hasPacked => $_has(1);
   @$pb.TagNumber(2)
   void clearPacked() => $_clearField(2);
 
@@ -2536,7 +2537,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set deprecated($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasDeprecated() => $_has(2);
+  $core.bool get hasDeprecated => $_has(2);
   @$pb.TagNumber(3)
   void clearDeprecated() => $_clearField(3);
 
@@ -2567,7 +2568,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set lazy($core.bool value) => $_setBool(3, value);
   @$pb.TagNumber(5)
-  $core.bool hasLazy() => $_has(3);
+  $core.bool get hasLazy => $_has(3);
   @$pb.TagNumber(5)
   void clearLazy() => $_clearField(5);
 
@@ -2587,7 +2588,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set jstype(FieldOptions_JSType value) => $_setField(6, value);
   @$pb.TagNumber(6)
-  $core.bool hasJstype() => $_has(4);
+  $core.bool get hasJstype => $_has(4);
   @$pb.TagNumber(6)
   void clearJstype() => $_clearField(6);
 
@@ -2601,7 +2602,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   set weak($core.bool value) => $_setBool(5, value);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
-  $core.bool hasWeak() => $_has(5);
+  $core.bool get hasWeak => $_has(5);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(10)
   void clearWeak() => $_clearField(10);
@@ -2614,7 +2615,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   set unverifiedLazy($core.bool value) => $_setBool(6, value);
   @$pb.TagNumber(15)
-  $core.bool hasUnverifiedLazy() => $_has(6);
+  $core.bool get hasUnverifiedLazy => $_has(6);
   @$pb.TagNumber(15)
   void clearUnverifiedLazy() => $_clearField(15);
 
@@ -2625,7 +2626,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   set debugRedact($core.bool value) => $_setBool(7, value);
   @$pb.TagNumber(16)
-  $core.bool hasDebugRedact() => $_has(7);
+  $core.bool get hasDebugRedact => $_has(7);
   @$pb.TagNumber(16)
   void clearDebugRedact() => $_clearField(16);
 
@@ -2634,7 +2635,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   set retention(FieldOptions_OptionRetention value) => $_setField(17, value);
   @$pb.TagNumber(17)
-  $core.bool hasRetention() => $_has(8);
+  $core.bool get hasRetention => $_has(8);
   @$pb.TagNumber(17)
   void clearRetention() => $_clearField(17);
 
@@ -2653,7 +2654,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   set features(FeatureSet value) => $_setField(21, value);
   @$pb.TagNumber(21)
-  $core.bool hasFeatures() => $_has(11);
+  $core.bool get hasFeatures => $_has(11);
   @$pb.TagNumber(21)
   void clearFeatures() => $_clearField(21);
   @$pb.TagNumber(21)
@@ -2665,7 +2666,7 @@ class FieldOptions extends $pb.GeneratedMessage {
   set featureSupport(FieldOptions_FeatureSupport value) =>
       $_setField(22, value);
   @$pb.TagNumber(22)
-  $core.bool hasFeatureSupport() => $_has(12);
+  $core.bool get hasFeatureSupport => $_has(12);
   @$pb.TagNumber(22)
   void clearFeatureSupport() => $_clearField(22);
   @$pb.TagNumber(22)
@@ -2740,7 +2741,7 @@ class OneofOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set features(FeatureSet value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasFeatures() => $_has(0);
+  $core.bool get hasFeatures => $_has(0);
   @$pb.TagNumber(1)
   void clearFeatures() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -2825,7 +2826,7 @@ class EnumOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set allowAlias($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(2)
-  $core.bool hasAllowAlias() => $_has(0);
+  $core.bool get hasAllowAlias => $_has(0);
   @$pb.TagNumber(2)
   void clearAllowAlias() => $_clearField(2);
 
@@ -2838,7 +2839,7 @@ class EnumOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set deprecated($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(3)
-  $core.bool hasDeprecated() => $_has(1);
+  $core.bool get hasDeprecated => $_has(1);
   @$pb.TagNumber(3)
   void clearDeprecated() => $_clearField(3);
 
@@ -2857,7 +2858,7 @@ class EnumOptions extends $pb.GeneratedMessage {
       $_setBool(2, value);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
-  $core.bool hasDeprecatedLegacyJsonFieldConflicts() => $_has(2);
+  $core.bool get hasDeprecatedLegacyJsonFieldConflicts => $_has(2);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(6)
   void clearDeprecatedLegacyJsonFieldConflicts() => $_clearField(6);
@@ -2871,7 +2872,7 @@ class EnumOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set features(FeatureSet value) => $_setField(7, value);
   @$pb.TagNumber(7)
-  $core.bool hasFeatures() => $_has(3);
+  $core.bool get hasFeatures => $_has(3);
   @$pb.TagNumber(7)
   void clearFeatures() => $_clearField(7);
   @$pb.TagNumber(7)
@@ -2957,7 +2958,7 @@ class EnumValueOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set deprecated($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasDeprecated() => $_has(0);
+  $core.bool get hasDeprecated => $_has(0);
   @$pb.TagNumber(1)
   void clearDeprecated() => $_clearField(1);
 
@@ -2970,7 +2971,7 @@ class EnumValueOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set features(FeatureSet value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasFeatures() => $_has(1);
+  $core.bool get hasFeatures => $_has(1);
   @$pb.TagNumber(2)
   void clearFeatures() => $_clearField(2);
   @$pb.TagNumber(2)
@@ -2984,7 +2985,7 @@ class EnumValueOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set debugRedact($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasDebugRedact() => $_has(2);
+  $core.bool get hasDebugRedact => $_has(2);
   @$pb.TagNumber(3)
   void clearDebugRedact() => $_clearField(3);
 
@@ -2994,7 +2995,7 @@ class EnumValueOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set featureSupport(FieldOptions_FeatureSupport value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasFeatureSupport() => $_has(3);
+  $core.bool get hasFeatureSupport => $_has(3);
   @$pb.TagNumber(4)
   void clearFeatureSupport() => $_clearField(4);
   @$pb.TagNumber(4)
@@ -3072,7 +3073,7 @@ class ServiceOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   set deprecated($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(33)
-  $core.bool hasDeprecated() => $_has(0);
+  $core.bool get hasDeprecated => $_has(0);
   @$pb.TagNumber(33)
   void clearDeprecated() => $_clearField(33);
 
@@ -3085,7 +3086,7 @@ class ServiceOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(34)
   set features(FeatureSet value) => $_setField(34, value);
   @$pb.TagNumber(34)
-  $core.bool hasFeatures() => $_has(1);
+  $core.bool get hasFeatures => $_has(1);
   @$pb.TagNumber(34)
   void clearFeatures() => $_clearField(34);
   @$pb.TagNumber(34)
@@ -3169,7 +3170,7 @@ class MethodOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(33)
   set deprecated($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(33)
-  $core.bool hasDeprecated() => $_has(0);
+  $core.bool get hasDeprecated => $_has(0);
   @$pb.TagNumber(33)
   void clearDeprecated() => $_clearField(33);
 
@@ -3179,7 +3180,7 @@ class MethodOptions extends $pb.GeneratedMessage {
   set idempotencyLevel(MethodOptions_IdempotencyLevel value) =>
       $_setField(34, value);
   @$pb.TagNumber(34)
-  $core.bool hasIdempotencyLevel() => $_has(1);
+  $core.bool get hasIdempotencyLevel => $_has(1);
   @$pb.TagNumber(34)
   void clearIdempotencyLevel() => $_clearField(34);
 
@@ -3192,7 +3193,7 @@ class MethodOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(35)
   set features(FeatureSet value) => $_setField(35, value);
   @$pb.TagNumber(35)
-  $core.bool hasFeatures() => $_has(2);
+  $core.bool get hasFeatures => $_has(2);
   @$pb.TagNumber(35)
   void clearFeatures() => $_clearField(35);
   @$pb.TagNumber(35)
@@ -3270,7 +3271,7 @@ class UninterpretedOption_NamePart extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set namePart($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasNamePart() => $_has(0);
+  $core.bool get hasNamePart => $_has(0);
   @$pb.TagNumber(1)
   void clearNamePart() => $_clearField(1);
 
@@ -3279,7 +3280,7 @@ class UninterpretedOption_NamePart extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set isExtension($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasIsExtension() => $_has(1);
+  $core.bool get hasIsExtension => $_has(1);
   @$pb.TagNumber(2)
   void clearIsExtension() => $_clearField(2);
 }
@@ -3370,7 +3371,7 @@ class UninterpretedOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set identifierValue($core.String value) => $_setString(1, value);
   @$pb.TagNumber(3)
-  $core.bool hasIdentifierValue() => $_has(1);
+  $core.bool get hasIdentifierValue => $_has(1);
   @$pb.TagNumber(3)
   void clearIdentifierValue() => $_clearField(3);
 
@@ -3379,7 +3380,7 @@ class UninterpretedOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set positiveIntValue($fixnum.Int64 value) => $_setInt64(2, value);
   @$pb.TagNumber(4)
-  $core.bool hasPositiveIntValue() => $_has(2);
+  $core.bool get hasPositiveIntValue => $_has(2);
   @$pb.TagNumber(4)
   void clearPositiveIntValue() => $_clearField(4);
 
@@ -3388,7 +3389,7 @@ class UninterpretedOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set negativeIntValue($fixnum.Int64 value) => $_setInt64(3, value);
   @$pb.TagNumber(5)
-  $core.bool hasNegativeIntValue() => $_has(3);
+  $core.bool get hasNegativeIntValue => $_has(3);
   @$pb.TagNumber(5)
   void clearNegativeIntValue() => $_clearField(5);
 
@@ -3397,7 +3398,7 @@ class UninterpretedOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set doubleValue($core.double value) => $_setDouble(4, value);
   @$pb.TagNumber(6)
-  $core.bool hasDoubleValue() => $_has(4);
+  $core.bool get hasDoubleValue => $_has(4);
   @$pb.TagNumber(6)
   void clearDoubleValue() => $_clearField(6);
 
@@ -3406,7 +3407,7 @@ class UninterpretedOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set stringValue($core.List<$core.int> value) => $_setBytes(5, value);
   @$pb.TagNumber(7)
-  $core.bool hasStringValue() => $_has(5);
+  $core.bool get hasStringValue => $_has(5);
   @$pb.TagNumber(7)
   void clearStringValue() => $_clearField(7);
 
@@ -3415,7 +3416,7 @@ class UninterpretedOption extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   set aggregateValue($core.String value) => $_setString(6, value);
   @$pb.TagNumber(8)
-  $core.bool hasAggregateValue() => $_has(6);
+  $core.bool get hasAggregateValue => $_has(6);
   @$pb.TagNumber(8)
   void clearAggregateValue() => $_clearField(8);
 }
@@ -3562,7 +3563,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set fieldPresence(FeatureSet_FieldPresence value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasFieldPresence() => $_has(0);
+  $core.bool get hasFieldPresence => $_has(0);
   @$pb.TagNumber(1)
   void clearFieldPresence() => $_clearField(1);
 
@@ -3571,7 +3572,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set enumType(FeatureSet_EnumType value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasEnumType() => $_has(1);
+  $core.bool get hasEnumType => $_has(1);
   @$pb.TagNumber(2)
   void clearEnumType() => $_clearField(2);
 
@@ -3581,7 +3582,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   set repeatedFieldEncoding(FeatureSet_RepeatedFieldEncoding value) =>
       $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasRepeatedFieldEncoding() => $_has(2);
+  $core.bool get hasRepeatedFieldEncoding => $_has(2);
   @$pb.TagNumber(3)
   void clearRepeatedFieldEncoding() => $_clearField(3);
 
@@ -3590,7 +3591,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set utf8Validation(FeatureSet_Utf8Validation value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasUtf8Validation() => $_has(3);
+  $core.bool get hasUtf8Validation => $_has(3);
   @$pb.TagNumber(4)
   void clearUtf8Validation() => $_clearField(4);
 
@@ -3599,7 +3600,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set messageEncoding(FeatureSet_MessageEncoding value) => $_setField(5, value);
   @$pb.TagNumber(5)
-  $core.bool hasMessageEncoding() => $_has(4);
+  $core.bool get hasMessageEncoding => $_has(4);
   @$pb.TagNumber(5)
   void clearMessageEncoding() => $_clearField(5);
 
@@ -3608,7 +3609,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set jsonFormat(FeatureSet_JsonFormat value) => $_setField(6, value);
   @$pb.TagNumber(6)
-  $core.bool hasJsonFormat() => $_has(5);
+  $core.bool get hasJsonFormat => $_has(5);
   @$pb.TagNumber(6)
   void clearJsonFormat() => $_clearField(6);
 
@@ -3618,7 +3619,7 @@ class FeatureSet extends $pb.GeneratedMessage {
   set enforceNamingStyle(FeatureSet_EnforceNamingStyle value) =>
       $_setField(7, value);
   @$pb.TagNumber(7)
-  $core.bool hasEnforceNamingStyle() => $_has(6);
+  $core.bool get hasEnforceNamingStyle => $_has(6);
   @$pb.TagNumber(7)
   void clearEnforceNamingStyle() => $_clearField(7);
 
@@ -3630,7 +3631,7 @@ class FeatureSet extends $pb.GeneratedMessage {
           FeatureSet_VisibilityFeature_DefaultSymbolVisibility value) =>
       $_setField(8, value);
   @$pb.TagNumber(8)
-  $core.bool hasDefaultSymbolVisibility() => $_has(7);
+  $core.bool get hasDefaultSymbolVisibility => $_has(7);
   @$pb.TagNumber(8)
   void clearDefaultSymbolVisibility() => $_clearField(8);
 }
@@ -3713,7 +3714,7 @@ class FeatureSetDefaults_FeatureSetEditionDefault extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set edition(Edition value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasEdition() => $_has(0);
+  $core.bool get hasEdition => $_has(0);
   @$pb.TagNumber(3)
   void clearEdition() => $_clearField(3);
 
@@ -3723,7 +3724,7 @@ class FeatureSetDefaults_FeatureSetEditionDefault extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set overridableFeatures(FeatureSet value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasOverridableFeatures() => $_has(1);
+  $core.bool get hasOverridableFeatures => $_has(1);
   @$pb.TagNumber(4)
   void clearOverridableFeatures() => $_clearField(4);
   @$pb.TagNumber(4)
@@ -3735,7 +3736,7 @@ class FeatureSetDefaults_FeatureSetEditionDefault extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set fixedFeatures(FeatureSet value) => $_setField(5, value);
   @$pb.TagNumber(5)
-  $core.bool hasFixedFeatures() => $_has(2);
+  $core.bool get hasFixedFeatures => $_has(2);
   @$pb.TagNumber(5)
   void clearFixedFeatures() => $_clearField(5);
   @$pb.TagNumber(5)
@@ -3814,7 +3815,7 @@ class FeatureSetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set minimumEdition(Edition value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasMinimumEdition() => $_has(1);
+  $core.bool get hasMinimumEdition => $_has(1);
   @$pb.TagNumber(4)
   void clearMinimumEdition() => $_clearField(4);
 
@@ -3825,7 +3826,7 @@ class FeatureSetDefaults extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set maximumEdition(Edition value) => $_setField(5, value);
   @$pb.TagNumber(5)
-  $core.bool hasMaximumEdition() => $_has(2);
+  $core.bool get hasMaximumEdition => $_has(2);
   @$pb.TagNumber(5)
   void clearMaximumEdition() => $_clearField(5);
 }
@@ -3979,7 +3980,7 @@ class SourceCodeInfo_Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set leadingComments($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasLeadingComments() => $_has(2);
+  $core.bool get hasLeadingComments => $_has(2);
   @$pb.TagNumber(3)
   void clearLeadingComments() => $_clearField(3);
 
@@ -3988,7 +3989,7 @@ class SourceCodeInfo_Location extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set trailingComments($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
-  $core.bool hasTrailingComments() => $_has(3);
+  $core.bool get hasTrailingComments => $_has(3);
   @$pb.TagNumber(4)
   void clearTrailingComments() => $_clearField(4);
 
@@ -4173,7 +4174,7 @@ class GeneratedCodeInfo_Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set sourceFile($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasSourceFile() => $_has(1);
+  $core.bool get hasSourceFile => $_has(1);
   @$pb.TagNumber(2)
   void clearSourceFile() => $_clearField(2);
 
@@ -4184,7 +4185,7 @@ class GeneratedCodeInfo_Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set begin($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasBegin() => $_has(2);
+  $core.bool get hasBegin => $_has(2);
   @$pb.TagNumber(3)
   void clearBegin() => $_clearField(3);
 
@@ -4196,7 +4197,7 @@ class GeneratedCodeInfo_Annotation extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set end($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
-  $core.bool hasEnd() => $_has(3);
+  $core.bool get hasEnd => $_has(3);
   @$pb.TagNumber(4)
   void clearEnd() => $_clearField(4);
 
@@ -4206,7 +4207,7 @@ class GeneratedCodeInfo_Annotation extends $pb.GeneratedMessage {
   set semantic(GeneratedCodeInfo_Annotation_Semantic value) =>
       $_setField(5, value);
   @$pb.TagNumber(5)
-  $core.bool hasSemantic() => $_has(4);
+  $core.bool get hasSemantic => $_has(4);
   @$pb.TagNumber(5)
   void clearSemantic() => $_clearField(5);
 }

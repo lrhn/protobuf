@@ -19,7 +19,8 @@ import 'package:protobuf/well_known_types/google/protobuf/duration.pb.dart'
 import 'client.pbenum.dart';
 import 'launch_stage.pbenum.dart' as $1;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 export 'client.pbenum.dart';
 
@@ -98,7 +99,7 @@ class CommonLanguageSettings extends $pb.GeneratedMessage {
   set referenceDocsUri($core.String value) => $_setString(0, value);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
-  $core.bool hasReferenceDocsUri() => $_has(0);
+  $core.bool get hasReferenceDocsUri => $_has(0);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(1)
   void clearReferenceDocsUri() => $_clearField(1);
@@ -114,7 +115,7 @@ class CommonLanguageSettings extends $pb.GeneratedMessage {
   set selectiveGapicGeneration(SelectiveGapicGeneration value) =>
       $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasSelectiveGapicGeneration() => $_has(2);
+  $core.bool get hasSelectiveGapicGeneration => $_has(2);
   @$pb.TagNumber(3)
   void clearSelectiveGapicGeneration() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -218,7 +219,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set version($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasVersion() => $_has(0);
+  $core.bool get hasVersion => $_has(0);
   @$pb.TagNumber(1)
   void clearVersion() => $_clearField(1);
 
@@ -228,7 +229,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set launchStage($1.LaunchStage value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasLaunchStage() => $_has(1);
+  $core.bool get hasLaunchStage => $_has(1);
   @$pb.TagNumber(2)
   void clearLaunchStage() => $_clearField(2);
 
@@ -239,7 +240,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set restNumericEnums($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasRestNumericEnums() => $_has(2);
+  $core.bool get hasRestNumericEnums => $_has(2);
   @$pb.TagNumber(3)
   void clearRestNumericEnums() => $_clearField(3);
 
@@ -249,7 +250,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   set javaSettings(JavaSettings value) => $_setField(21, value);
   @$pb.TagNumber(21)
-  $core.bool hasJavaSettings() => $_has(3);
+  $core.bool get hasJavaSettings => $_has(3);
   @$pb.TagNumber(21)
   void clearJavaSettings() => $_clearField(21);
   @$pb.TagNumber(21)
@@ -261,7 +262,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(22)
   set cppSettings(CppSettings value) => $_setField(22, value);
   @$pb.TagNumber(22)
-  $core.bool hasCppSettings() => $_has(4);
+  $core.bool get hasCppSettings => $_has(4);
   @$pb.TagNumber(22)
   void clearCppSettings() => $_clearField(22);
   @$pb.TagNumber(22)
@@ -273,7 +274,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   set phpSettings(PhpSettings value) => $_setField(23, value);
   @$pb.TagNumber(23)
-  $core.bool hasPhpSettings() => $_has(5);
+  $core.bool get hasPhpSettings => $_has(5);
   @$pb.TagNumber(23)
   void clearPhpSettings() => $_clearField(23);
   @$pb.TagNumber(23)
@@ -285,7 +286,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(24)
   set pythonSettings(PythonSettings value) => $_setField(24, value);
   @$pb.TagNumber(24)
-  $core.bool hasPythonSettings() => $_has(6);
+  $core.bool get hasPythonSettings => $_has(6);
   @$pb.TagNumber(24)
   void clearPythonSettings() => $_clearField(24);
   @$pb.TagNumber(24)
@@ -297,7 +298,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(25)
   set nodeSettings(NodeSettings value) => $_setField(25, value);
   @$pb.TagNumber(25)
-  $core.bool hasNodeSettings() => $_has(7);
+  $core.bool get hasNodeSettings => $_has(7);
   @$pb.TagNumber(25)
   void clearNodeSettings() => $_clearField(25);
   @$pb.TagNumber(25)
@@ -309,7 +310,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(26)
   set dotnetSettings(DotnetSettings value) => $_setField(26, value);
   @$pb.TagNumber(26)
-  $core.bool hasDotnetSettings() => $_has(8);
+  $core.bool get hasDotnetSettings => $_has(8);
   @$pb.TagNumber(26)
   void clearDotnetSettings() => $_clearField(26);
   @$pb.TagNumber(26)
@@ -321,7 +322,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   set rubySettings(RubySettings value) => $_setField(27, value);
   @$pb.TagNumber(27)
-  $core.bool hasRubySettings() => $_has(9);
+  $core.bool get hasRubySettings => $_has(9);
   @$pb.TagNumber(27)
   void clearRubySettings() => $_clearField(27);
   @$pb.TagNumber(27)
@@ -333,7 +334,7 @@ class ClientLibrarySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(28)
   set goSettings(GoSettings value) => $_setField(28, value);
   @$pb.TagNumber(28)
-  $core.bool hasGoSettings() => $_has(10);
+  $core.bool get hasGoSettings => $_has(10);
   @$pb.TagNumber(28)
   void clearGoSettings() => $_clearField(28);
   @$pb.TagNumber(28)
@@ -436,7 +437,7 @@ class Publishing extends $pb.GeneratedMessage {
   @$pb.TagNumber(101)
   set newIssueUri($core.String value) => $_setString(1, value);
   @$pb.TagNumber(101)
-  $core.bool hasNewIssueUri() => $_has(1);
+  $core.bool get hasNewIssueUri => $_has(1);
   @$pb.TagNumber(101)
   void clearNewIssueUri() => $_clearField(101);
 
@@ -447,7 +448,7 @@ class Publishing extends $pb.GeneratedMessage {
   @$pb.TagNumber(102)
   set documentationUri($core.String value) => $_setString(2, value);
   @$pb.TagNumber(102)
-  $core.bool hasDocumentationUri() => $_has(2);
+  $core.bool get hasDocumentationUri => $_has(2);
   @$pb.TagNumber(102)
   void clearDocumentationUri() => $_clearField(102);
 
@@ -459,7 +460,7 @@ class Publishing extends $pb.GeneratedMessage {
   @$pb.TagNumber(103)
   set apiShortName($core.String value) => $_setString(3, value);
   @$pb.TagNumber(103)
-  $core.bool hasApiShortName() => $_has(3);
+  $core.bool get hasApiShortName => $_has(3);
   @$pb.TagNumber(103)
   void clearApiShortName() => $_clearField(103);
 
@@ -469,7 +470,7 @@ class Publishing extends $pb.GeneratedMessage {
   @$pb.TagNumber(104)
   set githubLabel($core.String value) => $_setString(4, value);
   @$pb.TagNumber(104)
-  $core.bool hasGithubLabel() => $_has(4);
+  $core.bool get hasGithubLabel => $_has(4);
   @$pb.TagNumber(104)
   void clearGithubLabel() => $_clearField(104);
 
@@ -485,7 +486,7 @@ class Publishing extends $pb.GeneratedMessage {
   @$pb.TagNumber(106)
   set docTagPrefix($core.String value) => $_setString(6, value);
   @$pb.TagNumber(106)
-  $core.bool hasDocTagPrefix() => $_has(6);
+  $core.bool get hasDocTagPrefix => $_has(6);
   @$pb.TagNumber(106)
   void clearDocTagPrefix() => $_clearField(106);
 
@@ -495,7 +496,7 @@ class Publishing extends $pb.GeneratedMessage {
   @$pb.TagNumber(107)
   set organization(ClientLibraryOrganization value) => $_setField(107, value);
   @$pb.TagNumber(107)
-  $core.bool hasOrganization() => $_has(7);
+  $core.bool get hasOrganization => $_has(7);
   @$pb.TagNumber(107)
   void clearOrganization() => $_clearField(107);
 
@@ -513,7 +514,7 @@ class Publishing extends $pb.GeneratedMessage {
   set protoReferenceDocumentationUri($core.String value) =>
       $_setString(9, value);
   @$pb.TagNumber(110)
-  $core.bool hasProtoReferenceDocumentationUri() => $_has(9);
+  $core.bool get hasProtoReferenceDocumentationUri => $_has(9);
   @$pb.TagNumber(110)
   void clearProtoReferenceDocumentationUri() => $_clearField(110);
 
@@ -525,7 +526,7 @@ class Publishing extends $pb.GeneratedMessage {
   set restReferenceDocumentationUri($core.String value) =>
       $_setString(10, value);
   @$pb.TagNumber(111)
-  $core.bool hasRestReferenceDocumentationUri() => $_has(10);
+  $core.bool get hasRestReferenceDocumentationUri => $_has(10);
   @$pb.TagNumber(111)
   void clearRestReferenceDocumentationUri() => $_clearField(111);
 }
@@ -608,7 +609,7 @@ class JavaSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set libraryPackage($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasLibraryPackage() => $_has(0);
+  $core.bool get hasLibraryPackage => $_has(0);
   @$pb.TagNumber(1)
   void clearLibraryPackage() => $_clearField(1);
 
@@ -635,7 +636,7 @@ class JavaSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set common(CommonLanguageSettings value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasCommon() => $_has(2);
+  $core.bool get hasCommon => $_has(2);
   @$pb.TagNumber(3)
   void clearCommon() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -697,7 +698,7 @@ class CppSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -759,7 +760,7 @@ class PhpSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -842,7 +843,7 @@ class PythonSettings_ExperimentalFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set restAsyncIoEnabled($core.bool value) => $_setBool(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasRestAsyncIoEnabled() => $_has(0);
+  $core.bool get hasRestAsyncIoEnabled => $_has(0);
   @$pb.TagNumber(1)
   void clearRestAsyncIoEnabled() => $_clearField(1);
 
@@ -855,7 +856,7 @@ class PythonSettings_ExperimentalFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set protobufPythonicTypesEnabled($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasProtobufPythonicTypesEnabled() => $_has(1);
+  $core.bool get hasProtobufPythonicTypesEnabled => $_has(1);
   @$pb.TagNumber(2)
   void clearProtobufPythonicTypesEnabled() => $_clearField(2);
 
@@ -868,7 +869,7 @@ class PythonSettings_ExperimentalFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set unversionedPackageDisabled($core.bool value) => $_setBool(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasUnversionedPackageDisabled() => $_has(2);
+  $core.bool get hasUnversionedPackageDisabled => $_has(2);
   @$pb.TagNumber(3)
   void clearUnversionedPackageDisabled() => $_clearField(3);
 }
@@ -934,7 +935,7 @@ class PythonSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -947,7 +948,7 @@ class PythonSettings extends $pb.GeneratedMessage {
   set experimentalFeatures(PythonSettings_ExperimentalFeatures value) =>
       $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasExperimentalFeatures() => $_has(1);
+  $core.bool get hasExperimentalFeatures => $_has(1);
   @$pb.TagNumber(2)
   void clearExperimentalFeatures() => $_clearField(2);
   @$pb.TagNumber(2)
@@ -1010,7 +1011,7 @@ class NodeSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -1102,7 +1103,7 @@ class DotnetSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -1199,7 +1200,7 @@ class RubySettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -1267,7 +1268,7 @@ class GoSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set common(CommonLanguageSettings value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasCommon() => $_has(0);
+  $core.bool get hasCommon => $_has(0);
   @$pb.TagNumber(1)
   void clearCommon() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -1363,7 +1364,7 @@ class MethodSettings_LongRunning extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set initialPollDelay($0.Duration value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasInitialPollDelay() => $_has(0);
+  $core.bool get hasInitialPollDelay => $_has(0);
   @$pb.TagNumber(1)
   void clearInitialPollDelay() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -1377,7 +1378,7 @@ class MethodSettings_LongRunning extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set pollDelayMultiplier($core.double value) => $_setFloat(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasPollDelayMultiplier() => $_has(1);
+  $core.bool get hasPollDelayMultiplier => $_has(1);
   @$pb.TagNumber(2)
   void clearPollDelayMultiplier() => $_clearField(2);
 
@@ -1388,7 +1389,7 @@ class MethodSettings_LongRunning extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set maxPollDelay($0.Duration value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasMaxPollDelay() => $_has(2);
+  $core.bool get hasMaxPollDelay => $_has(2);
   @$pb.TagNumber(3)
   void clearMaxPollDelay() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -1401,7 +1402,7 @@ class MethodSettings_LongRunning extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set totalPollTimeout($0.Duration value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasTotalPollTimeout() => $_has(3);
+  $core.bool get hasTotalPollTimeout => $_has(3);
   @$pb.TagNumber(4)
   void clearTotalPollTimeout() => $_clearField(4);
   @$pb.TagNumber(4)
@@ -1478,7 +1479,7 @@ class MethodSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set selector($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasSelector() => $_has(0);
+  $core.bool get hasSelector => $_has(0);
   @$pb.TagNumber(1)
   void clearSelector() => $_clearField(1);
 
@@ -1501,7 +1502,7 @@ class MethodSettings extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set longRunning(MethodSettings_LongRunning value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasLongRunning() => $_has(1);
+  $core.bool get hasLongRunning => $_has(1);
   @$pb.TagNumber(2)
   void clearLongRunning() => $_clearField(2);
   @$pb.TagNumber(2)
@@ -1594,7 +1595,7 @@ class SelectiveGapicGeneration extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set generateOmittedAsInternal($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasGenerateOmittedAsInternal() => $_has(1);
+  $core.bool get hasGenerateOmittedAsInternal => $_has(1);
   @$pb.TagNumber(2)
   void clearGenerateOmittedAsInternal() => $_clearField(2);
 }

@@ -28,6 +28,7 @@ import 'utils.dart';
 
 export 'annotations.dart' show TagNumber, GrpcServiceName;
 export 'exceptions.dart' show InvalidProtocolBufferException;
+export 'has_getter_adapter.dart';
 export 'pb_list.dart' show PbList;
 export 'pb_map.dart' show PbMap;
 export 'type_registry.dart' show TypeRegistry;

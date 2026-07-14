@@ -60,7 +60,7 @@ class Int64 extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set value($fixnum.Int64 value) => $_setInt64(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasValue() => $_has(0);
+  $core.bool get hasValue => $_has(0);
   @$pb.TagNumber(1)
   void clearValue() => $_clearField(1);
 }

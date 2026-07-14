@@ -773,13 +773,13 @@ class MessageGenerator extends ProtobufContainer {
         _emitOverrideIf(field.overridesHasMethod, out);
         _emitIndexAnnotation(field.number, out);
         out.printlnAnnotated(
-          '$coreImportPrefix.bool ${names.hasMethodName}() =>'
+          '$coreImportPrefix.bool get ${names.hasMethodName} =>'
           ' \$_has(${field.index});',
           [
             NamedLocation(
               name: names.hasMethodName!,
               fieldPathSegment: memberFieldPath,
-              start: '$coreImportPrefix.bool '.length,
+              start: coreImportPrefix.length + '.bool get '.length,
             ),
           ],
         );

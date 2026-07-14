@@ -14,7 +14,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 /// Specifies the routing information that should be sent along with the request
 /// in the form of routing header.
@@ -491,7 +492,7 @@ class RoutingParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set field_1($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasField_1() => $_has(0);
+  $core.bool get hasField_1 => $_has(0);
   @$pb.TagNumber(1)
   void clearField_1() => $_clearField(1);
 
@@ -554,7 +555,7 @@ class RoutingParameter extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set pathTemplate($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasPathTemplate() => $_has(1);
+  $core.bool get hasPathTemplate => $_has(1);
   @$pb.TagNumber(2)
   void clearPathTemplate() => $_clearField(2);
 }

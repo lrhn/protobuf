@@ -14,7 +14,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 /// A mixin that can be used in the 'with' clause of the generated Dart class
 /// for a proto message.
@@ -75,7 +76,7 @@ class DartMixin extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -86,7 +87,7 @@ class DartMixin extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set importFrom($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasImportFrom() => $_has(1);
+  $core.bool get hasImportFrom => $_has(1);
   @$pb.TagNumber(2)
   void clearImportFrom() => $_clearField(2);
 
@@ -98,7 +99,7 @@ class DartMixin extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set parent($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasParent() => $_has(2);
+  $core.bool get hasParent => $_has(2);
   @$pb.TagNumber(3)
   void clearParent() => $_clearField(3);
 }

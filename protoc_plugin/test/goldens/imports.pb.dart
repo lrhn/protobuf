@@ -66,7 +66,7 @@ class M extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set m(M value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasM() => $_has(0);
+  $core.bool get hasM => $_has(0);
   @$pb.TagNumber(1)
   void clearM() => $_clearField(1);
   @$pb.TagNumber(1)
@@ -77,7 +77,7 @@ class M extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set m1($0.M value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasM1() => $_has(1);
+  $core.bool get hasM1 => $_has(1);
   @$pb.TagNumber(2)
   void clearM1() => $_clearField(2);
   @$pb.TagNumber(2)
@@ -88,7 +88,7 @@ class M extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set m2($1.M value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasM2() => $_has(2);
+  $core.bool get hasM2 => $_has(2);
   @$pb.TagNumber(3)
   void clearM2() => $_clearField(3);
   @$pb.TagNumber(3)

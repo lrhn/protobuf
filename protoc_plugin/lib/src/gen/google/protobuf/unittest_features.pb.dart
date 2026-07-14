@@ -16,7 +16,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'unittest_features.pbenum.dart';
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 export 'unittest_features.pbenum.dart';
 
@@ -235,7 +236,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set fileFeature(EnumFeature value) => $_setField(1, value);
   @$pb.TagNumber(1)
-  $core.bool hasFileFeature() => $_has(0);
+  $core.bool get hasFileFeature => $_has(0);
   @$pb.TagNumber(1)
   void clearFileFeature() => $_clearField(1);
 
@@ -244,7 +245,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set extensionRangeFeature(EnumFeature value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasExtensionRangeFeature() => $_has(1);
+  $core.bool get hasExtensionRangeFeature => $_has(1);
   @$pb.TagNumber(2)
   void clearExtensionRangeFeature() => $_clearField(2);
 
@@ -253,7 +254,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set messageFeature(EnumFeature value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasMessageFeature() => $_has(2);
+  $core.bool get hasMessageFeature => $_has(2);
   @$pb.TagNumber(3)
   void clearMessageFeature() => $_clearField(3);
 
@@ -262,7 +263,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set fieldFeature(EnumFeature value) => $_setField(4, value);
   @$pb.TagNumber(4)
-  $core.bool hasFieldFeature() => $_has(3);
+  $core.bool get hasFieldFeature => $_has(3);
   @$pb.TagNumber(4)
   void clearFieldFeature() => $_clearField(4);
 
@@ -271,7 +272,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set oneofFeature(EnumFeature value) => $_setField(5, value);
   @$pb.TagNumber(5)
-  $core.bool hasOneofFeature() => $_has(4);
+  $core.bool get hasOneofFeature => $_has(4);
   @$pb.TagNumber(5)
   void clearOneofFeature() => $_clearField(5);
 
@@ -280,7 +281,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set enumFeature(EnumFeature value) => $_setField(6, value);
   @$pb.TagNumber(6)
-  $core.bool hasEnumFeature() => $_has(5);
+  $core.bool get hasEnumFeature => $_has(5);
   @$pb.TagNumber(6)
   void clearEnumFeature() => $_clearField(6);
 
@@ -289,7 +290,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set enumEntryFeature(EnumFeature value) => $_setField(7, value);
   @$pb.TagNumber(7)
-  $core.bool hasEnumEntryFeature() => $_has(6);
+  $core.bool get hasEnumEntryFeature => $_has(6);
   @$pb.TagNumber(7)
   void clearEnumEntryFeature() => $_clearField(7);
 
@@ -298,7 +299,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   set serviceFeature(EnumFeature value) => $_setField(8, value);
   @$pb.TagNumber(8)
-  $core.bool hasServiceFeature() => $_has(7);
+  $core.bool get hasServiceFeature => $_has(7);
   @$pb.TagNumber(8)
   void clearServiceFeature() => $_clearField(8);
 
@@ -307,7 +308,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   set methodFeature(EnumFeature value) => $_setField(9, value);
   @$pb.TagNumber(9)
-  $core.bool hasMethodFeature() => $_has(8);
+  $core.bool get hasMethodFeature => $_has(8);
   @$pb.TagNumber(9)
   void clearMethodFeature() => $_clearField(9);
 
@@ -316,7 +317,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   set multipleFeature(EnumFeature value) => $_setField(10, value);
   @$pb.TagNumber(10)
-  $core.bool hasMultipleFeature() => $_has(9);
+  $core.bool get hasMultipleFeature => $_has(9);
   @$pb.TagNumber(10)
   void clearMultipleFeature() => $_clearField(10);
 
@@ -325,7 +326,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   set boolFieldFeature($core.bool value) => $_setBool(10, value);
   @$pb.TagNumber(11)
-  $core.bool hasBoolFieldFeature() => $_has(10);
+  $core.bool get hasBoolFieldFeature => $_has(10);
   @$pb.TagNumber(11)
   void clearBoolFieldFeature() => $_clearField(11);
 
@@ -334,7 +335,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   set sourceFeature(EnumFeature value) => $_setField(15, value);
   @$pb.TagNumber(15)
-  $core.bool hasSourceFeature() => $_has(11);
+  $core.bool get hasSourceFeature => $_has(11);
   @$pb.TagNumber(15)
   void clearSourceFeature() => $_clearField(15);
 
@@ -343,7 +344,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   set sourceFeature2(EnumFeature value) => $_setField(16, value);
   @$pb.TagNumber(16)
-  $core.bool hasSourceFeature2() => $_has(12);
+  $core.bool get hasSourceFeature2 => $_has(12);
   @$pb.TagNumber(16)
   void clearSourceFeature2() => $_clearField(16);
 
@@ -352,7 +353,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   set removedFeature(EnumFeature value) => $_setField(17, value);
   @$pb.TagNumber(17)
-  $core.bool hasRemovedFeature() => $_has(13);
+  $core.bool get hasRemovedFeature => $_has(13);
   @$pb.TagNumber(17)
   void clearRemovedFeature() => $_clearField(17);
 
@@ -361,7 +362,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(18)
   set futureFeature(EnumFeature value) => $_setField(18, value);
   @$pb.TagNumber(18)
-  $core.bool hasFutureFeature() => $_has(14);
+  $core.bool get hasFutureFeature => $_has(14);
   @$pb.TagNumber(18)
   void clearFutureFeature() => $_clearField(18);
 
@@ -370,7 +371,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(19)
   set legacyFeature(EnumFeature value) => $_setField(19, value);
   @$pb.TagNumber(19)
-  $core.bool hasLegacyFeature() => $_has(15);
+  $core.bool get hasLegacyFeature => $_has(15);
   @$pb.TagNumber(19)
   void clearLegacyFeature() => $_clearField(19);
 
@@ -379,7 +380,7 @@ class TestFeatures extends $pb.GeneratedMessage {
   @$pb.TagNumber(20)
   set valueLifetimeFeature(ValueLifetimeFeature value) => $_setField(20, value);
   @$pb.TagNumber(20)
-  $core.bool hasValueLifetimeFeature() => $_has(16);
+  $core.bool get hasValueLifetimeFeature => $_has(16);
   @$pb.TagNumber(20)
   void clearValueLifetimeFeature() => $_clearField(20);
 }

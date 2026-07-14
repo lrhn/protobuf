@@ -36,7 +36,7 @@ class PhoneNumber extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set number($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasNumber() => $_has(0);
+  $core.bool get hasNumber => $_has(0);
   @$pb.TagNumber(1)
   void clearNumber() => $_clearField(1);
 
@@ -45,7 +45,7 @@ class PhoneNumber extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set type(PhoneNumber_PhoneType value) => $_setField(2, value);
   @$pb.TagNumber(2)
-  $core.bool hasType() => $_has(1);
+  $core.bool get hasType => $_has(1);
   @$pb.TagNumber(2)
   void clearType() => $_clearField(2);
 
@@ -54,7 +54,7 @@ class PhoneNumber extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set name($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasName() => $_has(2);
+  $core.bool get hasName => $_has(2);
   @$pb.TagNumber(3)
   void clearName() => $_clearField(3);
 
@@ -66,7 +66,7 @@ class PhoneNumber extends $pb.GeneratedMessage {
   set deprecatedField($core.String value) => $_setString(3, value);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
-  $core.bool hasDeprecatedField() => $_has(3);
+  $core.bool get hasDeprecatedField => $_has(3);
   @$core.Deprecated('This field is deprecated.')
   @$pb.TagNumber(4)
   void clearDeprecatedField() => $_clearField(4);

@@ -62,7 +62,7 @@ extend google.protobuf.FieldOptions {
   // Adds @override annotation to the field's setter (for use with mixins).
   optional bool override_setter = 28937366;
 
-  // Adds @override annotation to the field's hasX() method (for use with
+  // Adds @override annotation to the field's hasX getter (for use with
   // mixins).
   optional bool override_has_method = 28937461;
 

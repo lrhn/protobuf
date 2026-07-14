@@ -7,13 +7,13 @@ mixin Mixin1 {
 
   String get interfaceString;
   set interfaceString(String string);
-  bool hasInterfaceString();
+  bool get hasInterfaceString;
 }
 
 mixin Mixin2 {
   String get overriddenString => 'mixin2';
 
-  bool hasOverriddenHasMethod() => false;
+  bool get hasOverriddenHasMethod => false;
 }
 
 mixin Mixin3 {}

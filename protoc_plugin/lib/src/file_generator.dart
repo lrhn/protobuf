@@ -331,7 +331,10 @@ class FileGenerator extends ProtobufContainer {
 
     importWriter.addExport(
       _protobufImportUrl,
-      members: ['GeneratedMessageGenericExtensions'],
+      members: [
+        'GeneratedMessageGenericExtensions',
+        'BoolMethodToGetterAdapter',
+      ],
     );
 
     for (final publicDependency in descriptor.publicDependency) {

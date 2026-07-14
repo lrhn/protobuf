@@ -48,17 +48,17 @@ void assertAllExtensionsSet(TestAllExtensions message) {
   );
   expect(message.hasExtension(Unittest.optionalImportMessageExtension), isTrue);
 
-  expect(message.getExtension(Unittest.optionalgroupExtension).hasA(), isTrue);
+  expect(message.getExtension(Unittest.optionalgroupExtension).hasA, isTrue);
   expect(
-    message.getExtension(Unittest.optionalNestedMessageExtension).hasBb(),
+    message.getExtension(Unittest.optionalNestedMessageExtension).hasBb,
     isTrue,
   );
   expect(
-    message.getExtension(Unittest.optionalForeignMessageExtension).hasC(),
+    message.getExtension(Unittest.optionalForeignMessageExtension).hasC,
     isTrue,
   );
   expect(
-    message.getExtension(Unittest.optionalImportMessageExtension).hasD(),
+    message.getExtension(Unittest.optionalImportMessageExtension).hasD,
     isTrue,
   );
 
@@ -342,38 +342,38 @@ void assertAllExtensionsSet(TestAllExtensions message) {
 }
 
 void assertAllFieldsSet(TestAllTypes message) {
-  expect(message.hasOptionalInt32(), isTrue);
-  expect(message.hasOptionalInt64(), isTrue);
-  expect(message.hasOptionalUint32(), isTrue);
-  expect(message.hasOptionalUint64(), isTrue);
-  expect(message.hasOptionalSint32(), isTrue);
-  expect(message.hasOptionalSint64(), isTrue);
-  expect(message.hasOptionalFixed32(), isTrue);
-  expect(message.hasOptionalFixed64(), isTrue);
-  expect(message.hasOptionalSfixed32(), isTrue);
-  expect(message.hasOptionalSfixed64(), isTrue);
-  expect(message.hasOptionalFloat(), isTrue);
-  expect(message.hasOptionalDouble(), isTrue);
-  expect(message.hasOptionalBool(), isTrue);
-  expect(message.hasOptionalString(), isTrue);
-  expect(message.hasOptionalBytes(), isTrue);
+  expect(message.hasOptionalInt32, isTrue);
+  expect(message.hasOptionalInt64, isTrue);
+  expect(message.hasOptionalUint32, isTrue);
+  expect(message.hasOptionalUint64, isTrue);
+  expect(message.hasOptionalSint32, isTrue);
+  expect(message.hasOptionalSint64, isTrue);
+  expect(message.hasOptionalFixed32, isTrue);
+  expect(message.hasOptionalFixed64, isTrue);
+  expect(message.hasOptionalSfixed32, isTrue);
+  expect(message.hasOptionalSfixed64, isTrue);
+  expect(message.hasOptionalFloat, isTrue);
+  expect(message.hasOptionalDouble, isTrue);
+  expect(message.hasOptionalBool, isTrue);
+  expect(message.hasOptionalString, isTrue);
+  expect(message.hasOptionalBytes, isTrue);
 
-  expect(message.hasOptionalgroup(), isTrue);
-  expect(message.hasOptionalNestedMessage(), isTrue);
-  expect(message.hasOptionalForeignMessage(), isTrue);
-  expect(message.hasOptionalImportMessage(), isTrue);
+  expect(message.hasOptionalgroup, isTrue);
+  expect(message.hasOptionalNestedMessage, isTrue);
+  expect(message.hasOptionalForeignMessage, isTrue);
+  expect(message.hasOptionalImportMessage, isTrue);
 
-  expect(message.optionalgroup.hasA(), isTrue);
-  expect(message.optionalNestedMessage.hasBb(), isTrue);
-  expect(message.optionalForeignMessage.hasC(), isTrue);
-  expect(message.optionalImportMessage.hasD(), isTrue);
+  expect(message.optionalgroup.hasA, isTrue);
+  expect(message.optionalNestedMessage.hasBb, isTrue);
+  expect(message.optionalForeignMessage.hasC, isTrue);
+  expect(message.optionalImportMessage.hasD, isTrue);
 
-  expect(message.hasOptionalNestedEnum(), isTrue);
-  expect(message.hasOptionalForeignEnum(), isTrue);
-  expect(message.hasOptionalImportEnum(), isTrue);
+  expect(message.hasOptionalNestedEnum, isTrue);
+  expect(message.hasOptionalForeignEnum, isTrue);
+  expect(message.hasOptionalImportEnum, isTrue);
 
-  expect(message.hasOptionalStringPiece(), isTrue);
-  expect(message.hasOptionalCord(), isTrue);
+  expect(message.hasOptionalStringPiece, isTrue);
+  expect(message.hasOptionalCord, isTrue);
 
   expect(message.optionalInt32, 101);
   expect(message.optionalInt64, expect64(102));
@@ -490,28 +490,28 @@ void assertAllFieldsSet(TestAllTypes message) {
 
   // -----------------------------------------------------------------
 
-  expect(message.hasDefaultInt32(), isTrue);
-  expect(message.hasDefaultInt64(), isTrue);
-  expect(message.hasDefaultUint32(), isTrue);
-  expect(message.hasDefaultUint64(), isTrue);
-  expect(message.hasDefaultSint32(), isTrue);
-  expect(message.hasDefaultSint64(), isTrue);
-  expect(message.hasDefaultFixed32(), isTrue);
-  expect(message.hasDefaultFixed64(), isTrue);
-  expect(message.hasDefaultSfixed32(), isTrue);
-  expect(message.hasDefaultSfixed64(), isTrue);
-  expect(message.hasDefaultFloat(), isTrue);
-  expect(message.hasDefaultDouble(), isTrue);
-  expect(message.hasDefaultBool(), isTrue);
-  expect(message.hasDefaultString(), isTrue);
-  expect(message.hasDefaultBytes(), isTrue);
+  expect(message.hasDefaultInt32, isTrue);
+  expect(message.hasDefaultInt64, isTrue);
+  expect(message.hasDefaultUint32, isTrue);
+  expect(message.hasDefaultUint64, isTrue);
+  expect(message.hasDefaultSint32, isTrue);
+  expect(message.hasDefaultSint64, isTrue);
+  expect(message.hasDefaultFixed32, isTrue);
+  expect(message.hasDefaultFixed64, isTrue);
+  expect(message.hasDefaultSfixed32, isTrue);
+  expect(message.hasDefaultSfixed64, isTrue);
+  expect(message.hasDefaultFloat, isTrue);
+  expect(message.hasDefaultDouble, isTrue);
+  expect(message.hasDefaultBool, isTrue);
+  expect(message.hasDefaultString, isTrue);
+  expect(message.hasDefaultBytes, isTrue);
 
-  expect(message.hasDefaultNestedEnum(), isTrue);
-  expect(message.hasDefaultForeignEnum(), isTrue);
-  expect(message.hasDefaultImportEnum(), isTrue);
+  expect(message.hasDefaultNestedEnum, isTrue);
+  expect(message.hasDefaultForeignEnum, isTrue);
+  expect(message.hasDefaultImportEnum, isTrue);
 
-  expect(message.hasDefaultStringPiece(), isTrue);
-  expect(message.hasDefaultCord(), isTrue);
+  expect(message.hasDefaultStringPiece, isTrue);
+  expect(message.hasDefaultCord, isTrue);
 
   expect(message.defaultInt32, 401);
   expect(message.defaultInt64, expect64(402));
@@ -538,34 +538,34 @@ void assertAllFieldsSet(TestAllTypes message) {
 }
 
 void assertClear(TestAllTypes message) {
-  // hasBlah() should initially be false for all optional fields.
-  expect(message.hasOptionalInt32(), isFalse);
-  expect(message.hasOptionalInt64(), isFalse);
-  expect(message.hasOptionalUint32(), isFalse);
-  expect(message.hasOptionalUint64(), isFalse);
-  expect(message.hasOptionalSint32(), isFalse);
-  expect(message.hasOptionalSint64(), isFalse);
-  expect(message.hasOptionalFixed32(), isFalse);
-  expect(message.hasOptionalFixed64(), isFalse);
-  expect(message.hasOptionalSfixed32(), isFalse);
-  expect(message.hasOptionalSfixed64(), isFalse);
-  expect(message.hasOptionalFloat(), isFalse);
-  expect(message.hasOptionalDouble(), isFalse);
-  expect(message.hasOptionalBool(), isFalse);
-  expect(message.hasOptionalString(), isFalse);
-  expect(message.hasOptionalBytes(), isFalse);
+  // hasBlah should initially be false for all optional fields.
+  expect(message.hasOptionalInt32, isFalse);
+  expect(message.hasOptionalInt64, isFalse);
+  expect(message.hasOptionalUint32, isFalse);
+  expect(message.hasOptionalUint64, isFalse);
+  expect(message.hasOptionalSint32, isFalse);
+  expect(message.hasOptionalSint64, isFalse);
+  expect(message.hasOptionalFixed32, isFalse);
+  expect(message.hasOptionalFixed64, isFalse);
+  expect(message.hasOptionalSfixed32, isFalse);
+  expect(message.hasOptionalSfixed64, isFalse);
+  expect(message.hasOptionalFloat, isFalse);
+  expect(message.hasOptionalDouble, isFalse);
+  expect(message.hasOptionalBool, isFalse);
+  expect(message.hasOptionalString, isFalse);
+  expect(message.hasOptionalBytes, isFalse);
 
-  expect(message.hasOptionalgroup(), isFalse);
-  expect(message.hasOptionalNestedMessage(), isFalse);
-  expect(message.hasOptionalForeignMessage(), isFalse);
-  expect(message.hasOptionalImportMessage(), isFalse);
+  expect(message.hasOptionalgroup, isFalse);
+  expect(message.hasOptionalNestedMessage, isFalse);
+  expect(message.hasOptionalForeignMessage, isFalse);
+  expect(message.hasOptionalImportMessage, isFalse);
 
-  expect(message.hasOptionalNestedEnum(), isFalse);
-  expect(message.hasOptionalForeignEnum(), isFalse);
-  expect(message.hasOptionalImportEnum(), isFalse);
+  expect(message.hasOptionalNestedEnum, isFalse);
+  expect(message.hasOptionalForeignEnum, isFalse);
+  expect(message.hasOptionalImportEnum, isFalse);
 
-  expect(message.hasOptionalStringPiece(), isFalse);
-  expect(message.hasOptionalCord(), isFalse);
+  expect(message.hasOptionalStringPiece, isFalse);
+  expect(message.hasOptionalCord, isFalse);
 
   // Optional fields without defaults are set to zero or something like it.
   expect(message.optionalInt32, 0);
@@ -585,10 +585,10 @@ void assertClear(TestAllTypes message) {
   expect(message.optionalBytes, <int>[]);
 
   // Embedded messages should also be clear.
-  expect(message.optionalgroup.hasA(), isFalse);
-  expect(message.optionalNestedMessage.hasBb(), isFalse);
-  expect(message.optionalForeignMessage.hasC(), isFalse);
-  expect(message.optionalImportMessage.hasD(), isFalse);
+  expect(message.optionalgroup.hasA, isFalse);
+  expect(message.optionalNestedMessage.hasBb, isFalse);
+  expect(message.optionalForeignMessage.hasC, isFalse);
+  expect(message.optionalImportMessage.hasD, isFalse);
 
   expect(message.optionalgroup.a, 0);
   expect(message.optionalNestedMessage.bb, 0);
@@ -631,29 +631,29 @@ void assertClear(TestAllTypes message) {
   expect(message.repeatedStringPiece.length, 0);
   expect(message.repeatedCord.length, 0);
 
-  // hasBlah() should also be false for all default fields.
-  expect(message.hasDefaultInt32(), isFalse);
-  expect(message.hasDefaultInt64(), isFalse);
-  expect(message.hasDefaultUint32(), isFalse);
-  expect(message.hasDefaultUint64(), isFalse);
-  expect(message.hasDefaultSint32(), isFalse);
-  expect(message.hasDefaultSint64(), isFalse);
-  expect(message.hasDefaultFixed32(), isFalse);
-  expect(message.hasDefaultFixed64(), isFalse);
-  expect(message.hasDefaultSfixed32(), isFalse);
-  expect(message.hasDefaultSfixed64(), isFalse);
-  expect(message.hasDefaultFloat(), isFalse);
-  expect(message.hasDefaultDouble(), isFalse);
-  expect(message.hasDefaultBool(), isFalse);
-  expect(message.hasDefaultString(), isFalse);
-  expect(message.hasDefaultBytes(), isFalse);
+  // hasBlah should also be false for all default fields.
+  expect(message.hasDefaultInt32, isFalse);
+  expect(message.hasDefaultInt64, isFalse);
+  expect(message.hasDefaultUint32, isFalse);
+  expect(message.hasDefaultUint64, isFalse);
+  expect(message.hasDefaultSint32, isFalse);
+  expect(message.hasDefaultSint64, isFalse);
+  expect(message.hasDefaultFixed32, isFalse);
+  expect(message.hasDefaultFixed64, isFalse);
+  expect(message.hasDefaultSfixed32, isFalse);
+  expect(message.hasDefaultSfixed64, isFalse);
+  expect(message.hasDefaultFloat, isFalse);
+  expect(message.hasDefaultDouble, isFalse);
+  expect(message.hasDefaultBool, isFalse);
+  expect(message.hasDefaultString, isFalse);
+  expect(message.hasDefaultBytes, isFalse);
 
-  expect(message.hasDefaultNestedEnum(), isFalse);
-  expect(message.hasDefaultForeignEnum(), isFalse);
-  expect(message.hasDefaultImportEnum(), isFalse);
+  expect(message.hasDefaultNestedEnum, isFalse);
+  expect(message.hasDefaultForeignEnum, isFalse);
+  expect(message.hasDefaultImportEnum, isFalse);
 
-  expect(message.hasDefaultStringPiece(), isFalse);
-  expect(message.hasDefaultCord(), isFalse);
+  expect(message.hasDefaultStringPiece, isFalse);
+  expect(message.hasDefaultCord, isFalse);
 
   // Fields with defaults have their default values(duh).
   expect(message.defaultInt32, 41);
@@ -681,7 +681,7 @@ void assertClear(TestAllTypes message) {
 }
 
 void assertExtensionsClear(TestAllExtensions message) {
-  // hasBlah() should initially be false for all optional fields.
+  // hasBlah should initially be false for all optional fields.
   expect(message.hasExtension(Unittest.optionalInt32Extension), isFalse);
   expect(message.hasExtension(Unittest.optionalInt64Extension), isFalse);
   expect(message.hasExtension(Unittest.optionalUint32Extension), isFalse);
@@ -737,17 +737,17 @@ void assertExtensionsClear(TestAllExtensions message) {
   expect(message.getExtension(Unittest.optionalBytesExtension), <int>[]);
 
   // Embedded messages should also be clear.
-  expect(message.getExtension(Unittest.optionalgroupExtension).hasA(), isFalse);
+  expect(message.getExtension(Unittest.optionalgroupExtension).hasA, isFalse);
   expect(
-    message.getExtension(Unittest.optionalNestedMessageExtension).hasBb(),
+    message.getExtension(Unittest.optionalNestedMessageExtension).hasBb,
     isFalse,
   );
   expect(
-    message.getExtension(Unittest.optionalForeignMessageExtension).hasC(),
+    message.getExtension(Unittest.optionalForeignMessageExtension).hasC,
     isFalse,
   );
   expect(
-    message.getExtension(Unittest.optionalImportMessageExtension).hasD(),
+    message.getExtension(Unittest.optionalImportMessageExtension).hasD,
     isFalse,
   );
 
@@ -847,7 +847,7 @@ void assertExtensionsClear(TestAllExtensions message) {
   expect(message.getExtension(Unittest.repeatedStringPieceExtension).length, 0);
   expect(message.getExtension(Unittest.repeatedCordExtension).length, 0);
 
-  // hasBlah() should also be false for all default fields.
+  // hasBlah should also be false for all default fields.
   expect(message.hasExtension(Unittest.defaultInt32Extension), isFalse);
   expect(message.hasExtension(Unittest.defaultInt64Extension), isFalse);
   expect(message.hasExtension(Unittest.defaultUint32Extension), isFalse);
@@ -1058,17 +1058,17 @@ void assertRepeatedExtensionsModified(TestAllExtensions message) {
   );
   expect(message.hasExtension(Unittest.optionalImportMessageExtension), isTrue);
 
-  expect(message.getExtension(Unittest.optionalgroupExtension).hasA(), isTrue);
+  expect(message.getExtension(Unittest.optionalgroupExtension).hasA, isTrue);
   expect(
-    message.getExtension(Unittest.optionalNestedMessageExtension).hasBb(),
+    message.getExtension(Unittest.optionalNestedMessageExtension).hasBb,
     isTrue,
   );
   expect(
-    message.getExtension(Unittest.optionalForeignMessageExtension).hasC(),
+    message.getExtension(Unittest.optionalForeignMessageExtension).hasC,
     isTrue,
   );
   expect(
-    message.getExtension(Unittest.optionalImportMessageExtension).hasD(),
+    message.getExtension(Unittest.optionalImportMessageExtension).hasD,
     isTrue,
   );
 

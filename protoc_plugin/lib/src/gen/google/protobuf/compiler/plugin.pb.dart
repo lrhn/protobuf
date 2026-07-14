@@ -17,7 +17,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../descriptor.pb.dart' as $0;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 export 'plugin.pbenum.dart';
 
@@ -82,7 +83,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set major($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasMajor() => $_has(0);
+  $core.bool get hasMajor => $_has(0);
   @$pb.TagNumber(1)
   void clearMajor() => $_clearField(1);
 
@@ -91,7 +92,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set minor($core.int value) => $_setSignedInt32(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasMinor() => $_has(1);
+  $core.bool get hasMinor => $_has(1);
   @$pb.TagNumber(2)
   void clearMinor() => $_clearField(2);
 
@@ -100,7 +101,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set patch($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasPatch() => $_has(2);
+  $core.bool get hasPatch => $_has(2);
   @$pb.TagNumber(3)
   void clearPatch() => $_clearField(3);
 
@@ -111,7 +112,7 @@ class Version extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set suffix($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
-  $core.bool hasSuffix() => $_has(3);
+  $core.bool get hasSuffix => $_has(3);
   @$pb.TagNumber(4)
   void clearSuffix() => $_clearField(4);
 }
@@ -194,7 +195,7 @@ class CodeGeneratorRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set parameter($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasParameter() => $_has(1);
+  $core.bool get hasParameter => $_has(1);
   @$pb.TagNumber(2)
   void clearParameter() => $_clearField(2);
 
@@ -204,7 +205,7 @@ class CodeGeneratorRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set compilerVersion(Version value) => $_setField(3, value);
   @$pb.TagNumber(3)
-  $core.bool hasCompilerVersion() => $_has(2);
+  $core.bool get hasCompilerVersion => $_has(2);
   @$pb.TagNumber(3)
   void clearCompilerVersion() => $_clearField(3);
   @$pb.TagNumber(3)
@@ -319,7 +320,7 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set name($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasName() => $_has(0);
+  $core.bool get hasName => $_has(0);
   @$pb.TagNumber(1)
   void clearName() => $_clearField(1);
 
@@ -365,7 +366,7 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set insertionPoint($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasInsertionPoint() => $_has(1);
+  $core.bool get hasInsertionPoint => $_has(1);
   @$pb.TagNumber(2)
   void clearInsertionPoint() => $_clearField(2);
 
@@ -375,7 +376,7 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(15)
   set content($core.String value) => $_setString(2, value);
   @$pb.TagNumber(15)
-  $core.bool hasContent() => $_has(2);
+  $core.bool get hasContent => $_has(2);
   @$pb.TagNumber(15)
   void clearContent() => $_clearField(15);
 
@@ -387,7 +388,7 @@ class CodeGeneratorResponse_File extends $pb.GeneratedMessage {
   @$pb.TagNumber(16)
   set generatedCodeInfo($0.GeneratedCodeInfo value) => $_setField(16, value);
   @$pb.TagNumber(16)
-  $core.bool hasGeneratedCodeInfo() => $_has(3);
+  $core.bool get hasGeneratedCodeInfo => $_has(3);
   @$pb.TagNumber(16)
   void clearGeneratedCodeInfo() => $_clearField(16);
   @$pb.TagNumber(16)
@@ -473,7 +474,7 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set error($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasError() => $_has(0);
+  $core.bool get hasError => $_has(0);
   @$pb.TagNumber(1)
   void clearError() => $_clearField(1);
 
@@ -484,7 +485,7 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set supportedFeatures($fixnum.Int64 value) => $_setInt64(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasSupportedFeatures() => $_has(1);
+  $core.bool get hasSupportedFeatures => $_has(1);
   @$pb.TagNumber(2)
   void clearSupportedFeatures() => $_clearField(2);
 
@@ -497,7 +498,7 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set minimumEdition($core.int value) => $_setSignedInt32(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasMinimumEdition() => $_has(2);
+  $core.bool get hasMinimumEdition => $_has(2);
   @$pb.TagNumber(3)
   void clearMinimumEdition() => $_clearField(3);
 
@@ -510,7 +511,7 @@ class CodeGeneratorResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set maximumEdition($core.int value) => $_setSignedInt32(3, value);
   @$pb.TagNumber(4)
-  $core.bool hasMaximumEdition() => $_has(3);
+  $core.bool get hasMaximumEdition => $_has(3);
   @$pb.TagNumber(4)
   void clearMaximumEdition() => $_clearField(4);
 

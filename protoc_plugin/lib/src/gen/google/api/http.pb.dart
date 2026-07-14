@@ -14,7 +14,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 /// Defines the HTTP configuration for an API service. It contains a list of
 /// [HttpRule][google.api.HttpRule], each specifying the mapping of an RPC method
@@ -86,7 +87,7 @@ class Http extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set fullyDecodeReservedExpansion($core.bool value) => $_setBool(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasFullyDecodeReservedExpansion() => $_has(1);
+  $core.bool get hasFullyDecodeReservedExpansion => $_has(1);
   @$pb.TagNumber(2)
   void clearFullyDecodeReservedExpansion() => $_clearField(2);
 }
@@ -466,7 +467,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set selector($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasSelector() => $_has(0);
+  $core.bool get hasSelector => $_has(0);
   @$pb.TagNumber(1)
   void clearSelector() => $_clearField(1);
 
@@ -477,7 +478,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set get($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasGet() => $_has(1);
+  $core.bool get hasGet => $_has(1);
   @$pb.TagNumber(2)
   void clearGet() => $_clearField(2);
 
@@ -487,7 +488,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   set put($core.String value) => $_setString(2, value);
   @$pb.TagNumber(3)
-  $core.bool hasPut() => $_has(2);
+  $core.bool get hasPut => $_has(2);
   @$pb.TagNumber(3)
   void clearPut() => $_clearField(3);
 
@@ -497,7 +498,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   set post($core.String value) => $_setString(3, value);
   @$pb.TagNumber(4)
-  $core.bool hasPost() => $_has(3);
+  $core.bool get hasPost => $_has(3);
   @$pb.TagNumber(4)
   void clearPost() => $_clearField(4);
 
@@ -507,7 +508,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   set delete($core.String value) => $_setString(4, value);
   @$pb.TagNumber(5)
-  $core.bool hasDelete() => $_has(4);
+  $core.bool get hasDelete => $_has(4);
   @$pb.TagNumber(5)
   void clearDelete() => $_clearField(5);
 
@@ -517,7 +518,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   set patch($core.String value) => $_setString(5, value);
   @$pb.TagNumber(6)
-  $core.bool hasPatch() => $_has(5);
+  $core.bool get hasPatch => $_has(5);
   @$pb.TagNumber(6)
   void clearPatch() => $_clearField(6);
 
@@ -532,7 +533,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   set body($core.String value) => $_setString(6, value);
   @$pb.TagNumber(7)
-  $core.bool hasBody() => $_has(6);
+  $core.bool get hasBody => $_has(6);
   @$pb.TagNumber(7)
   void clearBody() => $_clearField(7);
 
@@ -545,7 +546,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   set custom(CustomHttpPattern value) => $_setField(8, value);
   @$pb.TagNumber(8)
-  $core.bool hasCustom() => $_has(7);
+  $core.bool get hasCustom => $_has(7);
   @$pb.TagNumber(8)
   void clearCustom() => $_clearField(8);
   @$pb.TagNumber(8)
@@ -568,7 +569,7 @@ class HttpRule extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   set responseBody($core.String value) => $_setString(9, value);
   @$pb.TagNumber(12)
-  $core.bool hasResponseBody() => $_has(9);
+  $core.bool get hasResponseBody => $_has(9);
   @$pb.TagNumber(12)
   void clearResponseBody() => $_clearField(12);
 }
@@ -630,7 +631,7 @@ class CustomHttpPattern extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   set kind($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
-  $core.bool hasKind() => $_has(0);
+  $core.bool get hasKind => $_has(0);
   @$pb.TagNumber(1)
   void clearKind() => $_clearField(1);
 
@@ -640,7 +641,7 @@ class CustomHttpPattern extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   set path($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
-  $core.bool hasPath() => $_has(1);
+  $core.bool get hasPath => $_has(1);
   @$pb.TagNumber(2)
   void clearPath() => $_clearField(2);
 }
