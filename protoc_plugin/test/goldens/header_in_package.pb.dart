@@ -14,4 +14,5 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;

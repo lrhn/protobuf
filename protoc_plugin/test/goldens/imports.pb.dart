@@ -17,7 +17,8 @@ import 'package:protobuf/protobuf.dart' as $pb;
 import 'package1.pb.dart' as $0;
 import 'package2.pb.dart' as $1;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 class M extends $pb.GeneratedMessage {
   factory M() => M._();

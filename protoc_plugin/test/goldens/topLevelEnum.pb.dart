@@ -12,6 +12,7 @@
 
 import 'dart:core' as $core;
 
-export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
+export 'package:protobuf/protobuf.dart'
+    show GeneratedMessageGenericExtensions, BoolMethodToGetterAdapter;
 
 export 'test.pbenum.dart';
